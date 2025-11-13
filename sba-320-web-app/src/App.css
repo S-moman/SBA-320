@@ -1,0 +1,28 @@
+
+.character-card {
+    border: 1px solid red;
+    display: in;
+    /* justify-content: center; */
+    width: 1000px;
+}
+
+.card{
+    border: 1px solid blue;
+    /* justify-content: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#cInfo {
+    border: 1px solid blue;
+    /* height: 120px;
+    width: 120px; */
+    margin: 10px;
+    padding: 10px 20px;
+    box-sizing: content-box;
+}
+
+#cImage {
+    height: 300px;
+    width: 300px;
+}

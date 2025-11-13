@@ -5,29 +5,52 @@ export default function Characters() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const results = await fetch(
-        "https://rickandmortyapi.com/api/character?page=20"
-      );
-      const data = await results.json();
-      setData(data.results);
-      console.log(data.results);
+      try {
+        const results = await fetch(
+          "https://rickandmortyapi.com/api/character?page=1"
+        );
+        const data = await results.json();
+        setData(data.results);
+        console.log(data.results);
+      } catch (e) {
+        console.log(e.message);
+      }
     };
     fetchData();
   }, []);
 
   return (
-    <div>
+    <>
       {data.map((item) => (
-        <div key={item.id}>
-            <h1>Name: {item.name}</h1>
-          {<img src={item.image} alt={item.name} />}
-          <p>Species: {item.species}</p>
-          <p>Gender: {item.gender}</p>
-          <p>Status: {item.status}</p>
-          <p>Location: {item.location.name}</p>
-          <p>Location: {item.location.url}</p>
+        <div className="character-card" key={item.id}>
+          {<img id="cImage" src={item.image} alt={item.name} />}
+          <div>
+            <h1 id="cInfo">{item.name}</h1>
+            <div id="cInfo">
+              <b>Species:</b> {item.species}
+            </div>
+            <div id="cInfo">
+              <b>Gender:</b> {item.gender}
+            </div>
+            <div id="cInfo">
+              <b>Status:</b> {item.status}
+            </div>
+            <div id="cInfo">
+              <b>Location:</b> {item.location.name}
+            </div>
+            <div id="cInfo">
+              <b>Origin:</b> {item.origin.name}
+            </div>
+          </div>
         </div>
       ))}
-    </div>
+    </>
+    // <>
+    //     <select  name="characters-drop" id="character-card">
+    //   {data.map((item) => (
+    //       <option key={item.id} value={item}>{item.name}</option>
+    //     ))}
+    //     </select>
+    // </>
   );
 }
