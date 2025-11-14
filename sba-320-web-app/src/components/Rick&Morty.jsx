@@ -7,11 +7,11 @@ export default function Characters() {
     const fetchData = async () => {
       try {
         const results = await fetch(
-          "https://potterapi-fedeperin.vercel.app/en/characters"
+          "https://rickandmortyapi.com/api/character?page=1"
         );
         const data = await results.json();
-        setData(data);
-        // console.log(data);
+        setData(data.results);
+        console.log(data.results);
       } catch (e) {
         console.log(e.message);
       }
@@ -22,24 +22,24 @@ export default function Characters() {
   return (
     <>
       {data.map((item) => (
-        <div className="character-card" key={item.index}>
-          {<img id="cImage" src={item.image} alt={item.fullName} />}
+        <div className="character-card" key={item.id}>
+          {<img id="cImage" src={item.image} alt={item.name} />}
           <div>
-            <h1 id="cInfo">{item.fullName}</h1>
+            <h1 id="cInfo">{item.name}</h1>
             <div id="cInfo">
-              <b>Nickname:</b> {item.nickname}
+              <b>Species:</b> {item.species}
             </div>
             <div id="cInfo">
-              <b>Birthdate:</b> {item.birthdate}
+              <b>Gender:</b> {item.gender}
             </div>
             <div id="cInfo">
-              <b>Hogwarts House:</b> {item.hogwartsHouse}
+              <b>Status:</b> {item.status}
             </div>
             <div id="cInfo">
-              <b>Interpreted By:</b> {item.interpretedBy}
+              <b>Location:</b> {item.location.name}
             </div>
             <div id="cInfo">
-              <b>Children:</b> {item.children}
+              <b>Origin:</b> {item.origin.name}
             </div>
           </div>
         </div>

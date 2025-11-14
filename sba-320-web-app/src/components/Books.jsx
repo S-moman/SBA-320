@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-export default function Episodes() {
+export default function Books() {
   const [episode, setEpisode] = useState([]);
   
   useEffect(() => {
     const fetchEpisode = async () => {
       const results = await fetch(
-        "https://rickandmortyapi.com/api/episode?page=1"
+        "https://potterapi-fedeperin.vercel.app/en/books"
       );
       const ep = await results.json();
       setEpisode(ep.results);
