@@ -10,7 +10,7 @@ export default function Houses() {
       );
       const house = await results.json();
       setHouse(house);
-        console.log(house)
+        // console.log(house)
     };
     fetchLocation();
   }, []);

@@ -1,61 +1,75 @@
-
 .character-card {
-    border: 1px solid red;
-    width: auto;
-    margin: 5px;
+  border: 1px solid red;
+  width: auto;
+  margin: 5px;
 }
 
-.card{
-    display: flex;
-    width: auto;
-    /* border: 1px solid black; */
-    /* justify-content: center; */
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: scroll;
-    
+.card {
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: scroll hidden;
+  width: 300px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 10px;
 }
 
 #cInfo {
-    /* border: 1px solid blue; */
-    /* height: 120px;
+  /* border: 1px solid blue; */
+  /* height: 120px;
     width: 120px; */
-    margin: 10px;
-    padding: 10px 20px;
-    box-sizing: content-box;
+  margin: 10px;
+  padding: 10px 20px;
+  box-sizing: content-box;
 }
 
 #cImage {
-    height: 300px;
-    width: 300px;
-    border-radius: 40%;
+  height: 300px;
+  width: 300px;
+  border-radius: 40%;
 }
 
 nav {
-    /* display: block; */
-    border: 1px solid blue;
-    justify-content: center;
+  /* display: block; */
+  border: 1px solid blue;
+  justify-content: center;
 }
 
 #nav-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid red;
 }
 
 #link {
-    /* border: 2px solid red; */
-    /* height: 100px; */
+  /* border: 2px solid red; */
+  /* height: 100px; */
 }
 
 #house-card {
-    border: 1px solid red;
-    margin: 5px;
-    display: flex;
-    width: auto;
+  border: 1px solid red;
+  margin: 5px;
+  display: flex;
+  width: auto;
 }
 
 #hInfo {
-    margin: 10px;
-    padding: 10px 20px;
-    box-sizing: content-box;
+  margin: 10px;
+  padding: 10px 20px;
+  box-sizing: content-box;
+}
+
+#bInfo {
+  margin: 10px;
+  padding: 10px 20px;
+  box-sizing: content-box;
+}
+
+#book-card {
+  border: 1px solid red;
+  margin: 5px;
+  display: flex;
+  width: auto;
 }

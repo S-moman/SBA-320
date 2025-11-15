@@ -41,6 +41,7 @@ export default function Characters() {
             <div id="cInfo">
               <b>Children:</b> {item.children}
             </div>
+            <button>Like</button>
           </div>
         </div>
       ))}
