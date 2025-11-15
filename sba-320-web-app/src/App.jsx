@@ -17,7 +17,13 @@ function Card() {
 }
 
 function App() {
-  return <Books />;
+  return (
+    <>
+      <NavBar />
+      <Characters />
+      <Books />
+    </>
+  );
 }
 
 export default App;

@@ -22,7 +22,7 @@ export default function Books() {
   }
 
   return (
-    <>
+    <div className="book-section">
       {books.map((book) => (
         <div className="card">
           <ReactCardFlip flipDirection="vertical" isFlipped={isFlipped}>
@@ -38,23 +38,8 @@ export default function Books() {
           </ReactCardFlip>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 
-// <div className="card">
-//   {books.map((book) => (
-//     <ReactCardFlip flipDirection="vertical" isFlipped={isFlipped}>
-//       <div className="front" onClick={flipCard}>
-//         <img src={book.cover} alt={book.title} />
-//       </div>
-//       <div className="back" onClick={flipCard}>
-//         <div id="bInfo">Title: {book.title}</div>
-//         <div id="bInfo">Description: {book.description}</div>
-//         <div id="bInfo">Pages: {book.pages}</div>
-//         <div id="bInfo">Release Date: {book.releaseDate}</div>
-//       </div>
-//     </ReactCardFlip>
 
-//   ))}
-//   </div>
