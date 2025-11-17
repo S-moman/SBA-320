@@ -14,18 +14,17 @@ body {
   padding: 10px;
   background-color: hsl(0, 100%, 10%);
   color: hsl(51, 100%, 40%);
-
 }
 
 .character-section {
-    /* border: 3px solid rebeccapurple; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-    overflow: auto;
-    margin: 10px;
-    padding: 10px;
-    /* justify-content: space-evenly; */
-    width: 100%;
+  /* border: 3px solid rebeccapurple; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+  /* justify-content: space-evenly; */
+  width: 100%;
 }
 
 #book-card {
@@ -41,16 +40,16 @@ body {
 }
 
 .book-section {
-     /* border: 3px solid rebeccapurple; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-    overflow: auto;
-    margin: 50px;
-    padding: 30px;
-    width: 100%;
+  /* border: 3px solid rebeccapurple; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow: auto;
+  margin: 50px;
+  padding: 30px;
+  width: 100%;
 }
 
-.book-back{
+.book-back {
   border: 2px solid black;
   margin: 50px auto;
   background-color: hsl(0, 100%, 10%);
@@ -91,26 +90,30 @@ nav {
   border: 3px solid black;
   justify-content: center;
   border-radius: 20%;
-   background-color: hsl(0, 100%, 10%);
+  background-color: hsl(0, 100%, 10%);
   color: hsl(51, 100%, 40%);
 }
 
 #nav-title {
-    display: flex;
-    justify-content: center;
-    font-style: italic;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+
+#nav-title :visited {
+  color: hsl(51, 100%, 40%);
 }
 
 #nav-buttons {
   display: flex;
   justify-content: space-evenly;
   /* border: 2px solid red; */
-  border-top: 2px solid black;  
+  border-top: 2px solid black;
   text-decoration-line: none;
 }
 
-#nav-buttons :visited{
-  color: hsl(51, 100%, 40%)
+#nav-buttons :visited {
+  color: hsl(51, 100%, 40%);
 }
 
 #link {
@@ -119,16 +122,16 @@ nav {
 }
 
 .house-section {
-      /* border: 3px solid rebeccapurple; */
-    display: flex;
-    overflow: auto;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
+  /* border: 3px solid rebeccapurple; */
+  display: flex;
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
 }
 
 #house-card {
-border: 1px solid black;
+  border: 1px solid black;
   display: block;
   justify-content: center;
   align-items: center;
@@ -137,7 +140,7 @@ border: 1px solid black;
   margin: 30px;
   overflow: none;
   padding: 10px;
-  background-color:hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 20%);
   color: black;
 }
 
@@ -153,8 +156,8 @@ border: 1px solid black;
   box-sizing: content-box;
 }
 
-.spell-card{
-    border: 1px solid black;
+.spell-card {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,15 +170,15 @@ border: 1px solid black;
   color: hsl(51, 100%, 40%);
 }
 
-.spell-section{
-      /* border: 3px solid rebeccapurple; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-    overflow: auto;
-    margin: 10px;
-    padding: 10px;
-    /* justify-content: space-evenly; */
-    width: 100%;
+.spell-section {
+  /* border: 3px solid rebeccapurple; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+  /* justify-content: space-evenly; */
+  width: 100%;
 }
 
 Link {
