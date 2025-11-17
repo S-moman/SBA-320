@@ -1,10 +1,20 @@
+body {
+  background-color: hsl(0, 0%, 40%);
+}
+
 .character-card {
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
-  height: 400px;
-  margin: auto 30px;
-  overflow: auto;
+  height: 450px;
+  margin: 30px;
+  overflow: none;
   padding: 10px;
+  background-color: hsl(0, 100%, 10%);
+  color: hsl(51, 100%, 40%);
+
 }
 
 .character-section {
@@ -16,6 +26,37 @@
     padding: 10px;
     /* justify-content: space-evenly; */
     width: 100%;
+}
+
+#book-card {
+  /* border: 1px solid black; */
+  width: 300px;
+  height: 400px;
+  margin: 30px;
+  overflow: none;
+  padding: 10px;
+  box-sizing: content-box;
+  /* background-color: hsl(0, 100%, 10%); */
+  /* color: hsl(51, 100%, 40%); */
+}
+
+.book-section {
+     /* border: 3px solid rebeccapurple; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    overflow: auto;
+    margin: 50px;
+    padding: 30px;
+    width: 100%;
+}
+
+.book-back{
+  border: 2px solid black;
+  margin: 50px auto;
+  background-color: hsl(0, 100%, 10%);
+  color: hsl(51, 100%, 40%);
+  margin: auto;
+  /* padding: 20px; */
 }
 
 .card {
@@ -47,8 +88,11 @@
 
 nav {
   /* display: block; */
-  border: 1px solid blue;
+  border: 3px solid black;
   justify-content: center;
+  border-radius: 20%;
+   background-color: hsl(0, 100%, 10%);
+  color: hsl(51, 100%, 40%);
 }
 
 #nav-title {
@@ -60,7 +104,13 @@ nav {
 #nav-buttons {
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  border-top: 2px solid black;  
+  text-decoration-line: none;
+}
+
+#nav-buttons :visited{
+  color: hsl(51, 100%, 40%)
 }
 
 #link {
@@ -68,11 +118,27 @@ nav {
   /* height: 100px; */
 }
 
+.house-section {
+      /* border: 3px solid rebeccapurple; */
+    display: flex;
+    overflow: auto;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
 #house-card {
-  border: 1px solid red;
-  margin: 5px;
-  display: flex;
-  width: auto;
+border: 1px solid black;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  margin: 30px;
+  overflow: none;
+  padding: 10px;
+  background-color:hsl(0, 0%, 20%);
+  color: black;
 }
 
 #hInfo {
@@ -87,15 +153,22 @@ nav {
   box-sizing: content-box;
 }
 
-#book-card {
-  border: 1px solid red;
-  margin: 5px;
+.spell-card{
+    border: 1px solid black;
   display: flex;
-  width: auto;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 450px;
+  margin: 30px;
+  overflow: none;
+  padding: 10px;
+  background-color: hsl(0, 100%, 10%);
+  color: hsl(51, 100%, 40%);
 }
 
-.book-section {
-     /* border: 3px solid rebeccapurple; */
+.spell-section{
+      /* border: 3px solid rebeccapurple; */
     display: grid;
     grid-template-columns: auto auto auto;
     overflow: auto;
@@ -103,4 +176,8 @@ nav {
     padding: 10px;
     /* justify-content: space-evenly; */
     width: 100%;
+}
+
+Link {
+  text-decoration: none;
 }

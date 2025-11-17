@@ -16,7 +16,7 @@ export default function Houses() {
   }, []);
 
   return (
-    <div>
+    <div className="house-section">
       {house.map((h) => (
         <div id="house-card" key={h.index}>
           <div id="hInfo"><b>Founder:</b> {h.founder}</div>

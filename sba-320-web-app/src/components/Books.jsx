@@ -17,19 +17,24 @@ export default function Books() {
     fetchEpisode();
   }, []);
 
-  function flipCard() {
-    setFlipped(!isFlipped);
+
+  function flipCardEnter() {
+    setFlipped(true)
+  }
+
+  function flipCardLeave() {
+    setFlipped(false)
   }
 
   return (
     <div className="book-section">
       {books.map((book) => (
-        <div className="card">
-          <ReactCardFlip flipDirection="vertical" isFlipped={isFlipped}>
-            <div className="front" onClick={flipCard}>
+        <div id="book-card" key={book.index} className={`${isFlipped ? 'flipped' : ''}`} >
+          <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped }>
+            <div className="front" onMouseEnter={flipCardEnter} >
               <img src={book.cover} alt={book.title} />
             </div>
-            <div className="back" onClick={flipCard}>
+            <div className="book-back" onMouseLeave={flipCardLeave}>
               <div id="bInfo">Title: {book.title}</div>
               <div id="bInfo">Description: {book.description}</div>
               <div id="bInfo">Pages: {book.pages}</div>
